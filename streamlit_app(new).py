@@ -77,17 +77,15 @@ if test == "Prediksi":
         LT = st.number_input('Input Luas Tanah (m2)')
     with col1:
         LB = st.number_input('Input Luas Bangunan (m2)')
-    with col2:
-        KPR_Bulanan = st.number_input('Input harga cicilan KPR bulanan (juta/bulan)')
 
     predict = ''
 
     
     if st.button("Prediksi Harga Rumah (miliar)"):
         predict = model.predict(
-            [[Jenis_Rumah, Lokasi, KT, KM, Garasi, LT, LB, KPR_Bulanan]]
+            [[Jenis_Rumah, Lokasi, KT, KM, Garasi, LT, LB]]
         )
-        st.write("Berikut merupakan prediksi harga rumah sesuai dengan kriteria dalam satuan miliar : ", predict*1000)
+        st.write("Berikut merupakan prediksi harga rumah sesuai dengan kriteria dalam satuan miliar : ", predict)
     
     
     
