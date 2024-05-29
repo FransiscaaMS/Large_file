@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 import pandas as pd
 
-path_to_file = "Large_file/prediksi_harga_rumah_smg.sav"  
+path_to_file = "prediksi_harga_rumah_smg.sav"  
 model = pickle.load(open(path_to_file, 'rb'))
 
 # Membuat sidebar
