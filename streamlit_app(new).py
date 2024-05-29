@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 
-path_to_file = "C:\Users\Fransisca Mulya Sari\Documents\GitHub\Large_file"
+path_to_file = "C:\\Users\\Fransisca Mulya Sari\\Documents\\GitHub\\Large_file"
 model = pickle.load(open(path_to_file, 'rb'))
 
 # Membuat sidebar
