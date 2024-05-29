@@ -2,7 +2,9 @@ import pickle
 import streamlit as st
 import pandas as pd
 
-model = pickle.load(open('prediksi_harga_rumah_smg.sav', 'rb'))
+
+path_to_file = "C:\Users\Fransisca Mulya Sari\Documents\GitHub\Large_file"
+model = pickle.load(open(path_to_file, 'rb'))
 
 # Membuat sidebar
 test = st.sidebar.radio("Menu", ["Beranda", "Data","Labelling", "Prediksi", "Kontak"])
